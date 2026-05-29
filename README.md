@@ -133,25 +133,25 @@ The main findings were:
 
 The target variable was imbalanced, with non-fraud cases appearing more often than fraud cases.
 
-![Target distribution](images/target_distribution.png)
+![Target distribution](images/distribution of fraud_reported.png)
 
 ### Numeric Correlations
 
 Numerical features showed relatively weak linear correlation with the target variable.
 
-![Numeric correlations](images/numeric_correlations.png)
+![Numeric correlations](images/Strongest numeric correlations.png)
 
 ### Fraud Rate by Incident Severity
 
 The `incident_severity` variable showed a strong relationship with fraud. Claims classified as `Major Damage` had a much higher fraud rate than other severity levels.
 
-![Fraud by incident severity](images/fraud_by_incident_severity.png)
+![Fraud by incident severity](images/fraud rate by incident severity.png)
 
 ### Fraud Rate by Insured Hobbies
 
 The `insured_hobbies` variable also showed strong differences in fraud rate. Some categories, especially `chess` and `cross-fit`, had a much higher fraud rate than the rest.
 
-![Fraud by hobbies](images/fraud_by_hobbies.png)
+![Fraud by hobbies](images/fraud rate by insured hobbies.png)
 
 ---
 
@@ -241,7 +241,7 @@ The model detected 38 out of 49 fraud cases in the test set.
 
 ### Confusion Matrix
 
-![Confusion matrix](images/confusion_matrix.png)
+![Confusion matrix](images/confusion-matrix.png)
 
 ---
 
@@ -256,7 +256,7 @@ The most important features were mainly related to:
 - customer and policy information
 - selected categorical variables such as insured hobbies
 
-![Feature importance](images/feature_importance.png)
+![Feature importance](images/top 20 feature importances.png)
 
 ---
 
