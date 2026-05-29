@@ -54,12 +54,14 @@ insurance-fraud-detection/
 │   └── insurance_claims.csv
 │
 ├── images/
-│   ├── target_distribution.png
-│   ├── numeric_correlations.png
-│   ├── fraud_by_incident_severity.png
-│   ├── fraud_by_hobbies.png
-│   ├── confusion_matrix.png
-│   └── feature_importance.png
+│   ├── distribution-of-fraud-reported.png
+│   ├── Strongest-numeric-correlations.png
+│   ├── fraud-rate-by-incident-severity.png
+│   ├── fraud-rate-by-insured-hobbies.png
+│   ├── confusion-matrix.png
+│   └── top-20-feature-importances.png
+│
+├── notebooks/
 │
 ├── insurance_fraud_detection.ipynb
 ├── README.md
@@ -133,25 +135,25 @@ The main findings were:
 
 The target variable was imbalanced, with non-fraud cases appearing more often than fraud cases.
 
-![Target distribution](images/distribution of fraud_reported.png)
+![Target distribution](images/distribution-of-fraud-reported.png)
 
 ### Numeric Correlations
 
 Numerical features showed relatively weak linear correlation with the target variable.
 
-![Numeric correlations](images/Strongest numeric correlations.png)
+![Numeric correlations](images/Strongest-numeric-correlations.png)
 
 ### Fraud Rate by Incident Severity
 
 The `incident_severity` variable showed a strong relationship with fraud. Claims classified as `Major Damage` had a much higher fraud rate than other severity levels.
 
-![Fraud by incident severity](images/fraud rate by incident severity.png)
+![Fraud by incident severity](images/fraud-rate-by-incident-severity.png)
 
 ### Fraud Rate by Insured Hobbies
 
 The `insured_hobbies` variable also showed strong differences in fraud rate. Some categories, especially `chess` and `cross-fit`, had a much higher fraud rate than the rest.
 
-![Fraud by hobbies](images/fraud rate by insured hobbies.png)
+![Fraud by hobbies](images/fraud-rate-by-insured-hobbies.png)
 
 ---
 
@@ -256,7 +258,7 @@ The most important features were mainly related to:
 - customer and policy information
 - selected categorical variables such as insured hobbies
 
-![Feature importance](images/top 20 feature importances.png)
+![Feature importance](images/top-20-feature-importances.png)
 
 ---
 
